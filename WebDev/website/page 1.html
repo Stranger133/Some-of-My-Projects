@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<title>Page 1</title>
+    <style>
+	body{
+
+		margin:0;
+		padding:0;
+		background-color:#232931;
+		font-family:arial;
+
+	}
+	
+	p
+	{
+		position: relative;
+		color:#EDEDED;
+		margin-left:35%;
+		font-size:70px;
+
+	}
+	
+	.row{
+		display: flex;
+		flex-direction: row;
+		justify-content:center;
+	}
+	
+	
+	.numbers1{
+		margin-right:30px;
+		margin-top:30px;
+		height:150px;
+		width:150px;
+		background-color:#232931;
+		box-shadow: -5px -5px 20px -10px gray, 5px 5px 5px 0px black;
+		border-radius:20px;
+		text-align:center;
+	}
+	.numbers1:hover{
+		background-color:black;
+	}
+	
+	.txt1{
+		position:static;
+		margin-top:40%;
+		color:#F5F5F5;
+		font-size:45px;
+	}
+	
+	.tex
+	{
+		color:gray;
+	}
+	
+	.input
+	{
+		text-align:right;
+		font-size:80px;
+		margin-top: 10%;
+		margin-right:20%;
+	}
+	</style>
+	<body>
+	<div class="header"><p>Calclator</p></div>
+	
+	<p id="input"> </p>
+	
+	<div class="calc">
+	
+	<div class="row">
+	<div class="numbers1"><div class="txt1 tex">%</div></div><div class="numbers1"><div class="txt1 tex">CE</div></div><div class="numbers1"><div class="txt1 tex">AC</div></div><div class="numbers1"><div class="txt1 tex">:</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="numbers1"><div class="txt1" onclick="output()">7</div></div><div class="numbers1"><div class="txt1">8</div></div><div class="numbers1"><div class="txt1">9</div></div><div class="numbers1"><div class="txt1">x</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="numbers1"><div class="txt1">4</div></div><div class="numbers1"><div class="txt1">5</div></div><div class="numbers1"><div class="txt1">6</div></div><div class="numbers1"><div class="txt1">-</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="numbers1"><div class="txt1">1</div></div><div class="numbers1"><div class="txt1">2</div></div><div class="numbers1"><div class="txt1">3</div></div><div class="numbers1"><div class="txt1">+</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="numbers1"><div class="txt1"> </div></div><div class="numbers1"><div class="txt1">0</div></div><div class="numbers1"><div class="txt1">.</div></div><div class="numbers1"><div class="txt1">=</div></div>
+	</div>
+	
+	</div>
+	
+	
+
+	
+	<div class="end"></div>
+	
+	<script>
+
+	function output(e){
+		var x = this.textContent;
+		var y = document.getElementById("input").textContent;
+		console.log(y)
+		if(x = "AC"){
+			y = " ";
+		}
+		else{
+			y = y + x;
+		}
+				
+				
+	}
+	
+	</script>
+	
+	</body>
